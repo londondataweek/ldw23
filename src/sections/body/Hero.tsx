@@ -28,7 +28,7 @@ export default function Hero() {
       className=" relative min-h-[85vh] lg:min-h-screen items-center lg:snap-start pt-20 w-body-sm min-w-body max-w-body sm:w-body mx-auto "
     >
       <div className="flex h-full flex-col justify-between gap-8">
-        <div className="h-fit grid gap-20 ">
+        <div className="h-fit grid md:gap-20 ">
           <div className="pr-[6.5%] bg-darkblue rounded-3xl overflow-clip py-6">
             <AnimatedLogo />
           </div>
