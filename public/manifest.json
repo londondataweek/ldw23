@@ -1,0 +1,20 @@
+{
+  "manifest_version": "3",
+  "version": "0.1",
+  "short_name": "LDW",
+  "name": "London Data Week",
+  "description": "Get involved with London Data Week from the 3rd to the 9th of July: Data in the public for the Public",
+  "icons": [
+    {
+      "src": "LDW-Short-Logo-BB.svg",
+      "sizes": "144x144",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1c2434",
+  "background_color": "#1c2434"
+}
