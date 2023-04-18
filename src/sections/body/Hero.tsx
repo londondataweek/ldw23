@@ -36,7 +36,7 @@ export default function Hero() {
           {/* <div className=" ml-auto md:w-3/5 fade-in">
             <GroupLogoWhite />
           </div> */}
-          <div className=" m-auto grid gap-8 md:gap-16 text-center w-full fade-in">
+          <div className=" m-auto grid gap-8 md:gap-16 text-center w-full fade-in bg-white dark:bg-darkblue">
             <p className=" text-3xl md:text-[3.5rem] mx-auto w-fit font-bold ">July 3-9</p>
             <div className="text-3xl mx-auto text-center w-fit justify-center md:text-[3.5rem] flex flex-row flex-wrap gap-2">
               <p className="w-fit text-center my-2">
