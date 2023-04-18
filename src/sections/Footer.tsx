@@ -20,7 +20,7 @@ export default function Footer() {
             alt="corporate-logos"
           />
         </div>
-        <div className='grid gap-4'>
+        <div className='grid gap-4 mb-6'>
           <p key="text" className="m-0 w-fit mx-auto text-txt-mid dark:text-txt-mid-dk ">
             Design: London Data Week Team
           </p>
