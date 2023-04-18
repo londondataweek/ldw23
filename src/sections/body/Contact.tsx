@@ -25,7 +25,7 @@ export default function Contact() {
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
       <div className=" dark:bg-lightgreen bg-darkgreen flex rounded-3xl text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto mr-auto font-bold">
-        <p className=" text-xl sm:text-xl m-auto w-fit">
+        <p className=" text-lg sm:text-xl m-auto w-fit">
           To propose an event,{' '}
           <a
             className="hover:transiton hover:decoration-current hover:decoration hover:underline"
@@ -39,7 +39,7 @@ export default function Contact() {
         </p>
       </div>
       <div className=" dark:bg-pink bg-darkpink flex rounded-3xl text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto  mr-auto font-bold">
-        <p className=" text-xl sm:text-xl m-auto w-fit">
+        <p className=" text-lg sm:text-xl m-auto w-fit">
           For any other questions, email us at{' '}
           <a
             className="hover:transiton hover:decoration-current hover:decoration hover:underline"
