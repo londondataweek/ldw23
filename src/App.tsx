@@ -4,6 +4,7 @@ import Body from './sections/Body';
 import Footer from './sections/Footer';
 import MainContentLink from './sections/header/MainContentLink';
 import IntersectionProvider from './utilities/contexts/IntersectionProvider';
+import Hero from './sections/body/Hero';
 
 function setThemeToLocalStorage(themeBoolean: boolean) {
   localStorage.setItem('theme', themeBoolean.toString());
@@ -21,6 +22,7 @@ function App() {
       <div className=" font-body relative flex h-screen flex-col overflow-x-hidden overflow-y-scroll snap-y snap-normal snap-proximity scroll-smooth border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
         <MainContentLink />
         <IntersectionProvider>
+          <Hero />
           <Header toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} />
           <Body />
           <Footer />

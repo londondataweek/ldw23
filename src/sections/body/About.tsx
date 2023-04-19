@@ -22,7 +22,7 @@ export default function About() {
     <section
       id="about-section"
       ref={elementRef}
-      className="relative min-h-[80vh] scroll-m-32 lg:px-32 bg-transparent lg:snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto"
+      className="relative min-h-screen pt-32 lg:px-32 bg-transparent snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
       <div className="grid text-2xl w-full mx-auto gap-8">
         <div className="flex flex-wrap w-full gap-8 ">
