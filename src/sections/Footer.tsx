@@ -34,7 +34,7 @@ export default function Footer() {
             <AtiSvg />
           </a>
         </div>
-        <div className=" relative flex flex-row flex-wrap mx-auto justify-center max-w-[45rem] h-fit w-full gap-2">
+        <div className=" relative flex flex-row flex-wrap mx-auto justify-center max-w-[45rem] h-fit w-fit gap-4">
           <a
             className="w-fit h-16  mx-auto p-1 relative bg-darkblue rounded"
             href="https://thegeomob.com/"
