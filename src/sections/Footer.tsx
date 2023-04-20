@@ -8,13 +8,13 @@ export default function Footer() {
         className=" grid gap-10 w-body-sm min-w-body  max-w-body flex-wrap items-center
                 sm:w-body "
       >
-        <h2 className="w-fit mx-auto mt-24 text-center text-xl md:text-4xl font-bold decoration text-txt-mid dark:text-txt-mid-dk">
+        <h2 className="w-fit mx-auto mt-24 text-center text-lg md:text-2xl font-bold decoration text-txt-mid dark:text-txt-mid-dk">
           London Data Week is made possible by:
         </h2>
-        <div className=" mx-auto w-3/5">
+        <div className=" mx-auto w-3/5 max-w-[27rem]">
           <GroupLogoWhite />
           <img
-            className="bg-darkblue dark:bg-transparent rounded-2xl"
+            className="bg-darkblue dark:bg-transparent rounded-2xl "
             role="presentation"
             src="./CorporateLogos.png"
             alt="corporate-logos"
