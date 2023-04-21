@@ -1,7 +1,7 @@
+import HamburgerSvg from '../../assets/icons/HamburgerSvg';
+import MoonSvg from '../../assets/icons/MoonSvg';
+import SunSvg from '../../assets/icons/SunSvg';
 import SvgButtonNew from '../../elements/SvgButtonNew';
-import HamburgerSvg from '../../icons/HamburgerSvg';
-import MoonSvg from '../../icons/MoonSvg';
-import SunSvg from '../../icons/SunSvg';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
 import InternalLink from './InternalLink';
 

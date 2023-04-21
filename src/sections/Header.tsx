@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import HamburgerMenu from './header/HamburgerMenu';
 import NavBar from './header/NavBar';
-import FullLogoMonochrome from '../assets/FullLogoMonochrome';
+import FullLogoMonochrome from '../assets/logos/FullLogoMonochrome';
 
 export default function Header({
   toggleColourTheme,

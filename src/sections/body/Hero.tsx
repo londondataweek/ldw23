@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 // import FullLogoWhiteColour from '../../assets/FullLogoWhiteColour';
-// import GroupLogoWhite from '../../assets/GroupLogoWhite';
-import DownArrowSvg from '../../icons/DownArrowSvg';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
-import AnimatedLogo from '../../assets/AnimatedLogo';
+import DownArrowSvg from '../../assets/icons/DownArrowSvg';
+import AnimatedLogo from '../../assets/logos/AnimatedLogo';
 
 export default function Hero() {
   const { elementRef, onScreen } = useIntersectionObserver();
@@ -32,9 +31,6 @@ export default function Hero() {
           <AnimatedLogo />
         </div>
         {/* <FullLogoWhiteColour /> */}
-        {/* <div className=" ml-auto md:w-3/5 fade-in">
-            <GroupLogoWhite />
-          </div> */}
         <div className=" row-start-3 m-auto grid gap-4 md:gap-16 text-center w-full fade-in bg-white dark:bg-darkblue">
           <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">July 3-9</p>
           <div className="text-2xl xs:text-3xl mx-auto text-center w-fit justify-center md:text-5xl flex flex-row flex-wrap gap-2">

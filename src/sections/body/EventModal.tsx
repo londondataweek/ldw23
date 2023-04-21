@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import CloseSvg from '../../icons/CloseSvg';
+import CloseSvg from '../../assets/icons/CloseSvg';
 
 function lookupMonthName(number: number) {
   const lookupArray = [

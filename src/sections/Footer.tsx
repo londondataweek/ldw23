@@ -1,7 +1,7 @@
-import AtiSvg from '../assets/AtiSvg';
-import LotiSvg from '../assets/LotiSvg';
-import GldSvg from '../icons/GldSvg';
-import HorizontalDivider from '../icons/HorizontalDivider';
+import GldSvg from '../assets/icons/GldSvg';
+import HorizontalDivider from '../assets/icons/HorizontalDivider';
+import AtiSvg from '../assets/logos/AtiSvg';
+import LotiSvg from '../assets/logos/LotiSvg';
 import ExternalLink from './header/ExternalLink';
 
 export default function Footer() {

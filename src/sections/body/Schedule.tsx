@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
-import RightArrowSvg from '../../icons/RightArrowSvg';
-import LeftArrowSvg from '../../icons/LeftArrowSvg';
 import eventData from '../../eventData';
 import DayCard from './DayCard';
+import LeftArrowSvg from '../../assets/icons/LeftArrowSvg';
+import RightArrowSvg from '../../assets/icons/RightArrowSvg';
 
 const dataArray = eventData();
 
