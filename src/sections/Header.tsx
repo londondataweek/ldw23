@@ -31,7 +31,7 @@ sm:w-body "
             href={originURL}
             aria-label="Go To London Data Week Website"
           >
-            <div className="flex flex-row overflow-clip rounded-lg border-none h-12 my-0 mr-auto w-fit p-1">
+            <div className="flex flex-row overflow-clip rounded-none border-none h-12 my-0 mr-auto w-fit">
               <FullLogoMonochrome />
             </div>
           </a>
