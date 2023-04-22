@@ -16,7 +16,7 @@ function lookupMonthName(number: number) {
     'November',
     'December',
   ];
-  return lookupArray[number + 1];
+  return lookupArray[number - 1];
 }
 
 export default function EventModal({ close, event }: { close: () => void; event: Record<string, string> }) {
