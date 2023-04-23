@@ -1,7 +1,16 @@
 import { useState } from 'react';
 import EventModal from './EventModal';
+import EllipsisSvg from '../../assets/icons/EllipsisSvg';
 
-export default function EventCard({ eventObject }: { eventObject: Record<string, string> }) {
+export default function EventCard({
+  eventObject,
+  bottom,
+  indexNumber,
+}: {
+  eventObject: Record<string, string>;
+  bottom: boolean;
+  indexNumber: number;
+}) {
   const [clicked, setClicked] = useState(false);
   const { Name, Location, Time } = eventObject;
   function handleClick() {
@@ -12,15 +21,23 @@ export default function EventCard({ eventObject }: { eventObject: Record<string,
       <button
         type="button"
         onClick={handleClick}
-        className=" grid items-center h-full w-full rounded p-2 bg-semiWhite hover:transition hover:bg-white focus:transition focus:bg-white text-black text-base"
+        className={` relative grid items-center gap-2 min-h-[5rem] rounded-none ${
+          bottom ? 'rounded-b-xl' : ''
+        }  mx-2 justify-center p-2 px-8 bg-semiWhite hover:transition hover:bg-white focus:transition focus:bg-white text-darkblue text-base clip-corner`}
       >
         <h2 className="w-fit h-fit m-auto font-bold text-xl text-center">{Name.split(':')[0]}</h2>
         <div>
-          <p className="w-fit h-fit m-auto">{Location.split(',')[0]}</p>
           <p className="w-fit h-fit m-auto text-sm font-semibold">{Time}</p>
+          <p className="w-fit h-fit m-auto">{Location.split(',')[0]}</p>
+        </div>
+        <div className="absolute right-0 top-0 h-full flex w-10 my-auto ">
+          <div className="h-2 w-6 mx-auto mb-1 mt-auto text-darkblue">
+            {' '}
+            <EllipsisSvg />{' '}
+          </div>
         </div>
       </button>
-      {clicked ? <EventModal close={handleClick} event={eventObject} /> : null}
+      {clicked ? <EventModal close={handleClick} event={eventObject} colourIndex={indexNumber} /> : null}
     </>
   );
 }

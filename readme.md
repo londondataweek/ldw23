@@ -1,13 +1,16 @@
-# GLD React Starter
+# London Data Week Website 2023
 
 ## Includes:
 
-- Light / Dark mode
-- Responsive body section with media queries
-- Responsive Header section with hamburger menu for small screens
-- Simple Footer
-- Custom accessible colour scheme built in
-- Accesible link to skip to main content
+- Responsive Design for different sizes of screen
+- Downloadable 'App Mode' for mobile phones
+- In-page navigation/contents that tracks where you are
+- Accessibility optimisations:
+  1. Light & Dark Colour Schemes
+  2. Enhanced Colour contrast for readability (conforming to WCAG 2.1 guidelines)
+  3. Keyboard accessible 'Skip to main content' link
+  4. Custom Modal with tab-trap
+- Search Engine Optimisation
 
 ## Made with:
 
@@ -17,15 +20,10 @@
 - Prettier & Eslint (with Airbnb style)
 - Husky & Lint-Staged
 
-## Make it your own:
+London Data Week Website 2023 Gareth L Devlin
 
-1. replace names:
+### [Original Repository](https://github.com/GLD5000/LDW-GLD)
 
-- <title>LDW GLD</title> (in index.html)
-- "name": "ldw-gld" (in package.json & 2 x in package-lock.json)
+### [GLD5000 on GitHub](https://github.com/GLD5000)
 
-2. Add a favicon to index.html
-
-3. Add a manifest
-
-4. Delete the boiler plate within App.tsx when you are ready to start building!
+### [GLD Portfolio Website](https://gld-portfolio.vercel.app/)

@@ -1,7 +1,7 @@
 export default function LightBulbSvg() {
   return (
     <div className="pointer-events-none h-full w-full p-1">
-      <svg viewBox="20 20 104 104">
+      <svg viewBox="27 27 90 90">
         <g id="Icons">
           <g
             id="_x31_0_00000103985739418447932910000011866796215936490405_"

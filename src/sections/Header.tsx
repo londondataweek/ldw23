@@ -10,7 +10,7 @@ export default function Header({
   toggleColourTheme: () => void;
   colourTheme: boolean;
 }) {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const originURL = document.location.origin;
 
   function toggleShowMenu() {
@@ -35,7 +35,12 @@ sm:w-body "
               <FullLogoMonochrome />
             </div>
           </a>
-          <NavBar toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} toggleMenu={toggleShowMenu} />
+          <NavBar
+            toggleColourTheme={toggleColourTheme}
+            colourTheme={colourTheme}
+            toggleMenu={toggleShowMenu}
+            showHamburger={showMenu}
+          />
         </div>
         <HamburgerMenu toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} show={showMenu} />
       </div>

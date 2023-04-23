@@ -631,7 +631,7 @@ to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
-    <one line to give the program's name and a brief idea of what it does.>
+    London Data Week Website, a website to help the public connect with London Data Week events.
     Copyright (C) 2023  Gareth L Devlin
 
     This program is free software: you can redistribute it and/or modify
@@ -652,7 +652,7 @@ Also add information on how to contact you by electronic and paper mail.
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    GLD React Starter  Copyright (C) 2023  Gareth L Devlin
+    London Data Week Website Copyright (C) 2023  Gareth L Devlin
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.

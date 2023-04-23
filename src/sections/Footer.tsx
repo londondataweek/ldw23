@@ -1,7 +1,7 @@
-import GldSvg from '../assets/icons/GldSvg';
-import HorizontalDivider from '../assets/icons/HorizontalDivider';
 import AtiSvg from '../assets/logos/AtiSvg';
 import LotiSvg from '../assets/logos/LotiSvg';
+import GldSvg from '../assets/icons/GldSvg';
+import HorizontalDivider from '../assets/icons/HorizontalDivider';
 import ExternalLink from './header/ExternalLink';
 
 export default function Footer() {
@@ -11,12 +11,13 @@ export default function Footer() {
         className=" relative grid gap-10 w-body-sm min-w-body  max-w-body items-center
                 sm:w-body "
       >
-        <h2 className="w-fit mx-auto mt-24 text-center text-lg md:text-2xl font-bold decoration text-txt-mid dark:text-txt-mid-dk">
+        <h2 className="w-fit mx-auto mt-24 text-center text-base md:text-lg font-bold decoration text-txt-mid dark:text-txt-mid-dk">
           London Data Week is made possible by:
         </h2>
         <div className=" relative flex flex-row mx-auto h-[20vw] items-center max-h-[5rem] w-fit max-w-[27rem] gap-6">
           <a
             className="w-fit h-full max-h-[5rem] basis-0 grow"
+            aria-label="Go to the LOTI website"
             href="https://loti.london/"
             target="_blank"
             rel="noreferrer"
@@ -27,6 +28,7 @@ export default function Footer() {
           <HorizontalDivider />
           <a
             className="w-fit  h-full max-h-[5rem] basis-0 grow"
+            aria-label="Go to the Alan Turing Institute website"
             href="https://www.turing.ac.uk/"
             target="_blank"
             rel="noreferrer"
@@ -37,6 +39,7 @@ export default function Footer() {
         <div className=" relative flex flex-row flex-wrap mx-auto justify-center max-w-[45rem] h-fit w-fit gap-4">
           <a
             className="w-fit h-16  mx-auto p-1 relative bg-darkblue rounded"
+            aria-label="Go to the GeoMob website"
             href="https://thegeomob.com/"
             target="_blank"
             rel="noreferrer"
@@ -44,12 +47,13 @@ export default function Footer() {
             <img
               className=" h-full w-fit  object-scale-down object-center "
               role="presentation"
-              src="./geomob-logo.png"
+              src="./geomob-logo-small.png"
               alt="GeoMob Logo"
             />
           </a>
           <a
             className="w-fit h-16 mx-auto p-1 relative bg-white rounded"
+            aria-label="Go to the cabaret of dangerous ideas website"
             href="https://www.cabaretofdangerousideas.com/"
             target="_blank"
             rel="noreferrer"
@@ -57,12 +61,13 @@ export default function Footer() {
             <img
               className=" w-fit h-full object-scale-down object-center  "
               role="presentation"
-              src="./codi-logo.png"
+              src="./codi-logo-small.png"
               alt="Cabaret of Dangerous Ideas Logo"
             />
           </a>
           <a
             className="w-fit h-16  mx-auto p-1 relative bg-white rounded"
+            aria-label="Go to the Newham Council website"
             href="https://www.newham.gov.uk/"
             target="_blank"
             rel="noreferrer"
@@ -76,6 +81,7 @@ export default function Footer() {
           </a>
           <a
             className="w-fit h-16  mx-auto p-1 relative bg-white rounded"
+            aria-label="Go to the Royal Statistical Society website"
             href="https://rss.org.uk/"
             target="_blank"
             rel="noreferrer"
@@ -95,17 +101,16 @@ export default function Footer() {
           </p>
           <ExternalLink
             layoutClasses="w-fit mx-auto"
+            aria-label="Visit the GLD Porfolio"
             link="https://gld-portfolio.vercel.app/"
             content={
-              <p key="text" className="m-0 ">
-                Web Development: Gareth L Devlin
-              </p>
+              <div className="grid gap-4">
+                <p key="text" className="m-0 mx-auto ">
+                  Web Development: Gareth L Devlin
+                </p>
+                <GldSvg />
+              </div>
             }
-          />
-          <ExternalLink
-            layoutClasses="w-fit mx-auto my-2"
-            link="https://gld-portfolio.vercel.app/"
-            content={<GldSvg key="svg" />}
           />
         </div>
       </div>

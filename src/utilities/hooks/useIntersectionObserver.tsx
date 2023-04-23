@@ -4,7 +4,7 @@ export default function useIntersectionObserver(
   options: Partial<{ root: null | Element; rootMargin: string; threshold: number | number[] }> = {
     root: null,
     rootMargin: '-20% 0px -50% 0px',
-    threshold: [0.25, 0.3, 0.4],
+    threshold: [0.1, 0.15, 0.2],
   },
 ) {
   const elementRef = useRef<HTMLDivElement>(null);

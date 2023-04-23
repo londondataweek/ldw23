@@ -1,7 +1,7 @@
 export default function MailSvg() {
   return (
     <div className="pointer-events-none h-full w-full p-1">
-      <svg viewBox="20 20 104 104">
+      <svg viewBox="30 30 84 84">
         <g id="Icons">
           <g
             id="_x36__00000054976445856972853000000006826478978256187561_"

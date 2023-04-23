@@ -25,3 +25,14 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
+.clip-corner {
+  --inset: 1.75rem;
+  clip-path: polygon(
+    0% 100%,
+    0% calc(100% - var(--inset)),
+    0% 0%,
+    calc(100% - var(--inset)) 0%,
+    100% var(--inset),
+    100% 100%
+  );
+}

@@ -2,23 +2,29 @@ import { createContext, type ReactNode, useContext, type Dispatch, useState, typ
 
 export interface ProviderState {
   currentSection: string;
+  hasScrolled: boolean;
 }
 
 export interface ProviderContext extends ProviderState {
   setcurrentSection: Dispatch<SetStateAction<string>>;
+  setHasScrolled: Dispatch<SetStateAction<boolean>>;
 }
 
 const initialiserContext: ProviderContext = {
   currentSection: 'hero-section',
+  hasScrolled: false,
   setcurrentSection: () => undefined,
+  setHasScrolled: () => undefined,
 };
 
 function useData() {
   const [currentSection, setcurrentSection] = useState('hero-section');
-
+  const [hasScrolled, setHasScrolled] = useState(false);
   return {
     currentSection,
     setcurrentSection,
+    hasScrolled,
+    setHasScrolled,
   };
 }
 

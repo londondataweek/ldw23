@@ -1,31 +1,17 @@
 import { useEffect, useRef } from 'react';
 import CloseSvg from '../../assets/icons/CloseSvg';
 
-function lookupMonthName(number: number) {
-  const lookupArray = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ];
-  return lookupArray[number - 1];
-}
-
-export default function EventModal({ close, event }: { close: () => void; event: Record<string, string> }) {
-  const { Day, Date, Name, Location, DeliveryPartner, MoreInfo, Time } = event;
-  const [monthNumber, dayOfMonth, year] = Date.split('/');
-  const monthName = lookupMonthName(Number(monthNumber));
+export default function EventModal({
+  close,
+  event,
+  colourIndex,
+}: {
+  close: () => void;
+  event: Record<string, string>;
+  colourIndex: number;
+}) {
+  const { dayName, Name, Location, Organiser, MoreInfo, Time, EventType, dayNumber, yearNumber, monthName } = event;
   const initialFocus = useRef<HTMLButtonElement>(null);
-  const moreInfoNoHttp = MoreInfo.replace(/http[s]?:\/+/, '');
-  const moreInfoSlice = moreInfoNoHttp.length > 20 ? `${moreInfoNoHttp.slice(0, 20)}...` : moreInfoNoHttp;
 
   useEffect(() => {
     let run = true;
@@ -36,19 +22,8 @@ export default function EventModal({ close, event }: { close: () => void; event:
   }, [initialFocus]);
 
   return (
-    <div
-      //   onClick={close}
-      //   onKeyDown={close}
-      id="modal-background"
-      className="fixed top-0 left-0 m-auto bg-semiBlue h-screen w-screen z-[999] flex"
-    >
-      <div
-        className="relative sm:w-fit w-screen h-screen sm:h-fit sm:rounded rounded-none bg-white text-darkblue m-auto p-12"
-        // onClick={(e) => {
-        //   e.stopPropagation();
-        //   console.log('modal');
-        // }}
-      >
+    <div id="modal-background" className="fixed top-0 left-0 m-auto bg-semiBlue h-screen w-screen z-[999] flex">
+      <div className="relative sm:w-fit w-screen h-screen sm:h-fit sm:rounded-3xl sm:border-2 sm:border-darkblue rounded-none bg-white text-darkblue m-auto py-12 px-6 sm:p-12">
         <button
           ref={initialFocus}
           id="close-btn"
@@ -63,57 +38,51 @@ export default function EventModal({ close, event }: { close: () => void; event:
           <CloseSvg />
         </button>
         <div>
-          <div className="my-4 rounded bg-lightgreen py-2 px-4">
+          <div
+            className={`my-4 rounded-xl p-2 sm:p-6 text-center ${colourIndex === 0 ? 'bg-yellow' : ''}${
+              colourIndex === 1 ? 'bg-pink' : ''
+            }${colourIndex === 2 ? 'bg-lightgreen' : ''}`}
+          >
             <p className="w-fit mx-auto text-3xl font-bold">{Name.split(':')[0]}</p>
             {Name.split(':')[1] !== undefined ? (
               <p className="w-fit mx-auto mt-2 font-bold text-xl">{Name.split(':')[1]}</p>
             ) : null}
           </div>
-          <div className="w-fit mx-auto py-2 px-4">
-            <p className=" my-2 text-xl">
+          <div className="w-fit sm:w-full mx-auto py-2 sm:px-8">
+            <p className=" flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Organiser: </span>
-              {DeliveryPartner}
+              {Organiser}
+            </p>{' '}
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
+              <span className="font-bold">Type: </span>
+              {EventType}
             </p>
-            <p className=" my-2 text-xl">
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Location: </span>
               {Location}
             </p>
-            <p className=" my-2 text-xl">
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Date: </span>
-              {`${Day} ${dayOfMonth} ${monthName} ${year}`}
+              {`${dayName} ${dayNumber} ${monthName} ${yearNumber}`}
             </p>
-            <p className=" my-2 text-xl">
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Time: </span>
               {Time}
             </p>
-            {/* <p className=" mt-8 mb-2 text-xl">
-            <span className="font-bold">Registration: </span>
             <a
+              className={`hover:transiton hover:bg-darkblue mt-10 text-darkblue  hover:text-white  rounded-full w-44 sm:w-60 mx-auto h-12 flex justify-center align-middle ${
+                colourIndex === 0 ? 'bg-yellow' : ''
+              }${colourIndex === 1 ? 'bg-pink' : ''}${colourIndex === 2 ? 'bg-lightgreen' : ''}`}
+              target="_blank"
+              rel="noreferrer"
+              href={MoreInfo}
               onBlur={() => {
                 console.log('blur');
                 if (initialFocus.current != null) initialFocus.current.focus();
               }}
-              href="https://www.google.com"
-              target="_blank"
-              rel="noreferrer"
             >
-              www.google.com
+              <p className="w-fit h-fit mx-auto font-bold my-auto self-center text-lg sm:text-xl">Find Out More</p>
             </a>
-          </p> */}
-            <p className=" text-xl mt-2">
-              <span className="font-bold m-0">More Info: </span>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href={MoreInfo}
-                onBlur={() => {
-                  console.log('blur');
-                  if (initialFocus.current != null) initialFocus.current.focus();
-                }}
-              >
-                {moreInfoSlice}
-              </a>
-            </p>
           </div>
         </div>
       </div>
