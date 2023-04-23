@@ -52,7 +52,7 @@ export default function EventModal({
             <p className=" flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Organiser: </span>
               {Organiser}
-            </p>{' '}
+            </p>
             <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Type: </span>
               {EventType}

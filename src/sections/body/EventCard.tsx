@@ -32,8 +32,7 @@ export default function EventCard({
         </div>
         <div className="absolute right-0 top-0 h-full flex w-10 my-auto ">
           <div className="h-2 w-6 mx-auto mb-1 mt-auto text-darkblue">
-            {' '}
-            <EllipsisSvg />{' '}
+            <EllipsisSvg />
           </div>
         </div>
       </button>

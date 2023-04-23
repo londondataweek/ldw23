@@ -35,13 +35,13 @@ export default function Hero() {
           <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">July 3-9</p>
           <div className="text-2xl xs:text-3xl mx-auto text-center w-fit justify-center md:text-5xl flex flex-row flex-wrap gap-2">
             <p className="w-fit text-center ">
-              <span className="dark:text-lightgreen text-center text-darkgreentxt font-bold ">Data</span> in the{' '}
+              <span className="dark:text-lightgreen text-center text-darkgreentxt font-bold ">Data</span> in the
               <span className="dark:text-lightgreen text-center text-darkgreentxt font-bold ">public</span>,
             </p>
             <p className="w-fit text-center ">
               for the <span className=" dark:text-lightgreen text-darkgreentxt font-bold ">public</span>.
             </p>
-          </div>{' '}
+          </div>
         </div>
         <div className=" row-start-5 mb-auto h-fit sm:pb-8">
           <a

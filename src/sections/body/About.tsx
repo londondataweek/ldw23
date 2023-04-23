@@ -51,7 +51,7 @@ export default function About() {
         <div className="grid md:grid-cols-2  w-full gap-8 ">
           <p className="w-fit my-auto sm:p-4 md:col-start-2 basis-0 grow min-w-[15rem] sm:min-w-[20rem] ">
             Join us at <b>London Data Week</b> for a citywide festival about data to
-            <span className=" dark:text-yellow text-darkpink font-bold"> learn</span>,{' '}
+            <span className=" dark:text-yellow text-darkpink font-bold"> learn</span>,
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> create</span>,
             <span className=" dark:text-pink text-darkpink font-bold"> discuss</span>, and
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> explore</span> how to use data to shape

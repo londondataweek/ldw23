@@ -27,7 +27,7 @@ export default function DayCard({
     >
       <div className="grid h-fit m-auto w-full rounded rounded-b-none bg-semiWhite text-darkblue text-xl font-bold p-2">
         <p className="w-fit h-fit m-auto text-2xl">{dayName}</p>
-        <h2 className="w-fit h-fit m-auto text-2xl">{`${dayNumber} ${monthName}`}</h2>{' '}
+        <h2 className="w-fit h-fit m-auto text-2xl">{`${dayNumber} ${monthName}`}</h2>
       </div>
 
       <div className="grid gap-2 grow">{eventCards}</div>
