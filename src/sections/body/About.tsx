@@ -35,13 +35,13 @@ export default function About() {
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> next pair of trainers</span>.
           </p>
           <img
-            className="dark:block hidden max-w-[20rem] mx-auto aspect-custom basis-0 grow"
+            className="dark:block hidden max-w-[20rem] w-full h-auto mx-auto aspect-custom basis-0 grow"
             role="presentation"
             src="./illustrations/LDW-Data-Icons-Transparent_8.svg"
             alt="corporate-logos"
           />
           <img
-            className="dark:hidden block max-w-[20rem] mx-auto aspect-custom basis-0 grow "
+            className="dark:hidden block max-w-[20rem] w-full h-auto mx-auto aspect-custom basis-0 grow "
             role="presentation"
             src="./illustrations/LDW-Dark_8.svg"
             alt="corporate-logos"
@@ -59,14 +59,14 @@ export default function About() {
           </p>
 
           <img
-            className="dark:block md:col-start-1 md:row-start-1 hidden max-w-[20rem] mx-auto aspect-custom basis-0 grow "
+            className="dark:block md:col-start-1 md:row-start-1 hidden max-w-[20rem] w-full h-auto mx-auto aspect-custom basis-0 grow "
             role="presentation"
             src="./illustrations/LDW-Data-Icons-Transparent_3.svg"
             alt="corporate-logos"
           />
 
           <img
-            className="dark:hidden md:col-start-1 md:row-start-1 block max-w-[20rem] mx-auto aspect-custom basis-0 grow "
+            className="dark:hidden md:col-start-1 md:row-start-1 block max-w-[20rem] w-full h-auto mx-auto aspect-custom basis-0 grow "
             role="presentation"
             src="./illustrations/LDW-Dark_3.svg"
             alt="corporate-logos"
@@ -79,13 +79,13 @@ export default function About() {
             announced in May 2023.
           </p>
           <img
-            className="dark:hidden block max-w-[20rem] mx-auto aspect-custom basis-0 grow "
+            className="dark:hidden block max-w-[20rem] w-full h-auto mx-auto aspect-custom basis-0 grow "
             role="presentation"
             src="./illustrations/LDW-Dark_6.svg"
             alt="corporate-logos"
           />
           <img
-            className="dark:block hidden max-w-[20rem] mx-auto aspect-custom basis-0 grow "
+            className="dark:block hidden max-w-[20rem] w-full h-auto mx-auto aspect-custom basis-0 grow "
             role="presentation"
             src="./illustrations/LDW-Data-Icons-Transparent_6.svg"
             alt="corporate-logos"
