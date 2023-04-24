@@ -104,7 +104,7 @@ export default function Footer() {
             aria-label="Visit the GLD Porfolio"
             link="https://gld-portfolio.vercel.app/"
             content={
-              <div className="grid gap-4">
+              <div className="grid gap-4 mb-12">
                 <p key="text" className="m-0 mx-auto ">
                   Web Development: Gareth L Devlin
                 </p>
