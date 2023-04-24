@@ -10,6 +10,12 @@
   animation-fill-mode: forwards;
 }
 
+.fade-in-fast {
+  animation: 100ms fadeInAnimation ease-in 400ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

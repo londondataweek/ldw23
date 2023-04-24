@@ -13,6 +13,12 @@ export default function EventModal({
   const { dayName, Name, Location, Organiser, MoreInfo, Time, EventType, dayNumber, yearNumber, monthName } = event;
   const initialFocus = useRef<HTMLButtonElement>(null);
 
+  function handleClose() {
+    setTimeout(() => {
+      close();
+    }, 300);
+  }
+
   useEffect(() => {
     let run = true;
     if (run && initialFocus.current != null) initialFocus.current.focus();
@@ -22,16 +28,19 @@ export default function EventModal({
   }, [initialFocus]);
 
   return (
-    <div id="modal-background" className="fixed top-0 left-0 m-auto bg-semiBlue h-screen w-screen z-[999] flex">
+    <div
+      id="modal-background"
+      className="fixed top-0 left-0 m-auto opacity-0 fade-in-fast bg-darkblue sm:bg-semiBlue h-screen w-screen z-[999] flex"
+    >
       <div className="relative sm:w-fit w-screen h-screen sm:h-fit sm:rounded-3xl sm:border-2 sm:border-darkblue rounded-none bg-white text-darkblue m-auto py-12 px-6 sm:p-12">
         <button
           ref={initialFocus}
           id="close-btn"
           aria-label="close-information-box"
           type="button"
-          onClick={close}
+          onClick={handleClose}
           onKeyDown={(e) => {
-            if (e.key !== 'Tab') close();
+            if (e.key !== 'Tab') handleClose();
           }}
           className="w-8 h-8 bg-palegrey hover:transition text-darkblue focus:text-palegrey focus:transition focus:bg-darkblue hover:bg-darkblue hover:text-white rounded-full p-1 absolute top-2 right-2"
         >
