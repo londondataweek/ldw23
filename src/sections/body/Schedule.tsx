@@ -31,7 +31,7 @@ export default function Schedule() {
     <section
       id="schedule-section"
       ref={elementRef}
-      className="min-h-screen  pt-40 sm:pt-36 snap-none lg:snap-start  w-body-sm min-w-body max-w-body sm:w-body mx-auto"
+      className="min-h-screen  pt-40 sm:pt-36 snap-none lg:snap-start md:px-8 lg:px-12 xl:px-16 w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
       <h2 className="text-4xl font-bold w-fit mx-auto text-center mb-12">LDW 2023 Schedule</h2>
       <div className="grid w-full  rounded  gap-2 overflow-clip ">{DayCards}</div>
