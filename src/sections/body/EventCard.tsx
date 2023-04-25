@@ -16,14 +16,18 @@ export default function EventCard({
   function handleClick() {
     setClicked((currentState) => !currentState);
   }
+  function closeFunction() {
+    setClicked(false);
+  }
   return (
     <>
+      {clicked ? <EventModal close={closeFunction} event={eventObject} colourIndex={indexNumber} /> : null}
       <button
         type="button"
         onClick={handleClick}
         className={` relative grid items-center gap-2 min-h-[5rem] rounded-none ${
           bottom ? 'rounded-b-xl' : ''
-        }  mx-2 justify-center p-2 px-8 bg-semiWhite hover:transition hover:bg-white focus:transition focus:bg-white text-darkblue text-base clip-corner`}
+        }  mx-2 justify-center p-2 px-8 bg-semiWhite hover:transition hover:bg-white focus:transition focus:outline-none focus:bg-white text-darkblue text-base clip-corner`}
       >
         <h2 className="w-fit h-fit m-auto font-bold text-xl text-center">{Name.split(':')[0]}</h2>
         <div>
@@ -36,7 +40,6 @@ export default function EventCard({
           </div>
         </div>
       </button>
-      {clicked ? <EventModal close={handleClick} event={eventObject} colourIndex={indexNumber} /> : null}
     </>
   );
 }
