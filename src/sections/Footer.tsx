@@ -104,15 +104,17 @@ export default function Footer() {
             Design: London Data Week Team
           </p>
           <ExternalLink
-            layoutClasses="w-fit mx-auto"
+            layoutClasses="w-fit mx-auto hover:transition hover:scale-105 focus:transition focus:scale-105 mb-12"
             aria-label="Visit the GLD Porfolio"
             link="https://gld-portfolio.vercel.app/"
             content={
-              <div className="grid gap-4 mb-12">
+              <div className="grid gap-4 ">
                 <p key="text" className="m-0 mx-auto ">
                   Web Development: Gareth L Devlin
                 </p>
-                <GldSvg />
+                <div className="mx-auto h-14 w-14">
+                  <GldSvg />
+                </div>
               </div>
             }
           />
