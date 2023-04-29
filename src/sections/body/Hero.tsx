@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
 
         <div className=" row-start-3 m-auto grid gap-4 md:gap-16 text-center w-full fade-in bg-white dark:bg-darkblue">
-          <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">July 3-9</p>
+          <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">3-9 July</p>
           <div className="text-2xl xs:text-3xl mx-auto text-center w-fit justify-center md:text-5xl flex flex-row flex-wrap gap-2">
             <p className="w-fit text-center ">
               <span className="dark:text-lightgreen text-center text-darkgreentxt font-bold ">Data</span> in the
