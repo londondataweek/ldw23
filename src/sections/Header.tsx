@@ -2,6 +2,7 @@ import { useState } from 'react';
 import HamburgerMenu from './header/HamburgerMenu';
 import NavBar from './header/NavBar';
 import FullLogoMonochrome from '../assets/logos/FullLogoMonochrome';
+import { useIntersectionProviderContext } from '../utilities/contexts/IntersectionProvider';
 
 export default function Header({
   toggleColourTheme,
@@ -12,6 +13,9 @@ export default function Header({
 }) {
   const [showMenu, setShowMenu] = useState(true);
   const originURL = document.location.origin;
+  const { hasScrolled } = useIntersectionProviderContext();
+
+  if (!hasScrolled) return <div className="sticky grid top-0 left-0 right-0 z-[996] w-screen min-h-[88px]"> </div>;
 
   function toggleShowMenu() {
     setShowMenu((state) => !state);
@@ -19,7 +23,7 @@ export default function Header({
   return (
     <header
       id="top"
-      className="sticky top-0 left-0 right-0 z-[996] grid py-3 w-screen h-fit content-center  bg-bg dark:bg-bg-dk"
+      className="sticky top-0 left-0 right-0 z-[996] grid py-3 w-screen  h-[88px] content-center  bg-bg dark:bg-bg-dk"
     >
       <div className=" ">
         <div
