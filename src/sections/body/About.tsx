@@ -41,7 +41,7 @@ export default function About() {
             alt="corporate-logos"
           />
           <img
-            className="dark:hidden block max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "
+            className="dark:hidden block max-w-[20rem] w-full h-auto xs:h-48 xs:w-fit md:h-60 mx-auto  "
             role="presentation"
             src="./illustrations/LDW-Dark_8Crop.svg"
             alt="corporate-logos"
