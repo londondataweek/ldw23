@@ -27,7 +27,7 @@ export default function About() {
     >
       <h2 className="text-4xl font-bold w-fit mx-auto text-center mb-12">About LDW 2023</h2>
 
-      <div className="grid text-base text-justify sm:text-left lg:text-justify xs:text-xl w-full mx-auto gap-6 sm:gap-8">
+      <div className="grid text-base text-justify  md:text-xl lg:text-2xl w-full mx-auto gap-6 sm:gap-8">
         <div className="grid sm:grid-cols-2 w-full gap-6 sm:gap-8 ">
           <p className="w-fit my-auto sm:p-4 min-w-[15rem] md:min-w-[20rem]">
             Data is part of our everyday lives as Londoners, from choosing the
