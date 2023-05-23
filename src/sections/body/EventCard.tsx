@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import EventModal from './EventModal';
 import EllipsisSvg from '../../assets/icons/EllipsisSvg';
 
@@ -11,17 +11,15 @@ export default function EventCard({
   bottom: boolean;
   indexNumber: number;
 }) {
-  const [clicked, setClicked] = useState(false);
+  const modalRef = useRef<HTMLDialogElement>(null);
+
   const { Name, Location, Time } = eventObject;
   function handleClick() {
-    setClicked((currentState) => !currentState);
-  }
-  function closeFunction() {
-    setClicked(false);
+    modalRef.current?.showModal();
   }
   return (
     <>
-      {clicked ? <EventModal close={closeFunction} event={eventObject} colourIndex={indexNumber} /> : null}
+      <EventModal refPassed={modalRef} event={eventObject} colourIndex={indexNumber} />
       <button
         type="button"
         onClick={handleClick}

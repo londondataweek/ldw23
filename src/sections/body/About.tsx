@@ -38,13 +38,13 @@ export default function About() {
             className="dark:block hidden max-w-[20rem] w-full h-auto xs:h-48 xs:w-fit md:h-60 mx-auto "
             role="presentation"
             src="./illustrations/LDW-Data-Icons-Transparent_8Crop.svg"
-            alt="corporate-logos"
+            alt="Tube Sign Illustration"
           />
           <img
             className="dark:hidden block max-w-[20rem] w-full h-auto xs:h-48 xs:w-fit md:h-60 mx-auto  "
             role="presentation"
             src="./illustrations/LDW-Dark_8Crop.svg"
-            alt="corporate-logos"
+            alt="Tube Sign Illustration"
           />
         </div>
 
@@ -62,14 +62,14 @@ export default function About() {
             className="dark:block sm:col-start-1 sm:row-start-1 hidden max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "
             role="presentation"
             src="./illustrations/LDW-Data-Icons-Transparent_3Crop.svg"
-            alt="corporate-logos"
+            alt="Lightbulb Illustration"
           />
 
           <img
             className="dark:hidden sm:col-start-1 sm:row-start-1 block max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "
             role="presentation"
             src="./illustrations/LDW-Dark_3Crop.svg"
-            alt="corporate-logos"
+            alt="Lightbulb Illustration"
           />
         </div>
 
@@ -82,13 +82,13 @@ export default function About() {
             className="dark:hidden block max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "
             role="presentation"
             src="./illustrations/LDW-Dark_6Crop.svg"
-            alt="corporate-logos"
+            alt="Big Ben Illustration"
           />
           <img
             className="dark:block hidden max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "
             role="presentation"
             src="./illustrations/LDW-Data-Icons-Transparent_6Crop.svg"
-            alt="corporate-logos"
+            alt="Big Ben Illustration"
           />
         </div>
       </div>

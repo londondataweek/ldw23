@@ -1,4 +1,4 @@
-export default function GldSvg({ wrapperClasses = ' pointer-events-none mx-auto h-10 w-10 fill-current' }) {
+export default function GldSvg({ wrapperClasses = ' pointer-events-none mx-auto h-full w-full fill-current' }) {
   return (
     <div className={wrapperClasses}>
       <svg id="gld-svg" role="img" aria-label="GLD" height="100%" width="100%" viewBox="0 0 16 16">

@@ -3,6 +3,7 @@ import LotiSvg from '../assets/logos/LotiSvg';
 import GldSvg from '../assets/icons/GldSvg';
 import HorizontalDivider from '../assets/icons/HorizontalDivider';
 import ExternalLink from './header/ExternalLink';
+// import MolSvg from '../assets/logos/MolSvg';
 
 export default function Footer() {
   return (
@@ -40,6 +41,10 @@ export default function Footer() {
             <AtiSvg />
           </a>
         </div>
+        {/* <div className='md:my-6 max-w-[30rem] min-w-[15rem] mx-auto h-auto w-full'>
+
+        <MolSvg/>
+        </div> */}
         <div className="  flex flex-row flex-wrap mx-auto justify-center max-w-[45rem] h-fit w-fit gap-4">
           <a
             className="w-fit h-16  mx-auto p-1  bg-darkblue rounded"

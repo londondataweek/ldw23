@@ -1,15 +1,28 @@
 import { useEffect } from 'react';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
-import eventData from '../../eventData';
+import eventData, { getHardData } from '../../eventDataProcessor';
 import DayCard from './DayCard';
 
-const dataArray = eventData();
+let DayCards: JSX.Element[];
+function init() {
+  eventData()
+    .then((dataArray) => {
+      DayCards = dataArray.map((event, index) => {
+        const key = `${index}`;
+        return <DayCard key={key} colourIndex={index} eventsArray={event} />;
+      });
+    })
+    .catch(() => {
+      const dataArray = getHardData();
+      DayCards = dataArray.map((event, index) => {
+        const key = `${index}`;
+        return <DayCard key={key} colourIndex={index} eventsArray={event} />;
+      });
+    });
+}
 
-const DayCards = dataArray.map((event, index) => {
-  const key = `${index}`;
-  return <DayCard key={key} colourIndex={index} eventsArray={event} />;
-});
+init();
 
 export default function Schedule() {
   const { elementRef, onScreen } = useIntersectionObserver();

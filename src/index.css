@@ -42,3 +42,29 @@
     100% 100%
   );
 }
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+dialog:not([open]) {
+  display: none;
+}
+
+dialog {
+  opacity: 1;
+  display: grid;
+  animation: modalAnimation ease-out 300ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes modalAnimation {
+  0% {
+    scale: 0.95;
+    opacity: 0;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
+}
