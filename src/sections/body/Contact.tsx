@@ -53,7 +53,7 @@ export default function Contact() {
           id="name-input"
           name="name"
           aria-label="name"
-          className=" h-16 w-full border-transparent border border-b-darkpink dark:border-b-pink p-2 bg-transparent text-base sm:text-lg placeholder:text-current "
+          className=" h-16 w-full border-transparent border-2 border-b-darkblue dark:border-b-pink p-2 bg-transparent text-base sm:text-lg placeholder:text-current "
           type="text"
           placeholder="Name"
           required
@@ -62,7 +62,7 @@ export default function Contact() {
           id="email-input"
           name="email"
           aria-label="email"
-          className=" h-16 w-full border-transparent border border-b-darkpink dark:border-b-pink p-2 bg-transparent text-base sm:text-lg placeholder:text-current "
+          className=" h-16 w-full border-transparent border-2 border-b-darkblue dark:border-b-pink p-2 bg-transparent text-base sm:text-lg placeholder:text-current "
           type="email"
           placeholder="Email"
           required
@@ -72,7 +72,7 @@ export default function Contact() {
           id="message-input"
           name="message"
           aria-label="message"
-          className=" w-full border-transparent border border-b-darkpink dark:border-b-pink p-2 bg-transparent text-base sm:text-lg placeholder:text-current  resize-y"
+          className=" w-full border-transparent border-2 border-b-darkblue dark:border-b-pink p-2 bg-transparent text-base sm:text-lg placeholder:text-current  resize-y"
           placeholder="Message"
           rows={5}
           wrap="hard"
