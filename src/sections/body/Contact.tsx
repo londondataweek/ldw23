@@ -24,7 +24,7 @@ export default function Contact() {
       ref={elementRef}
       className="flex flex-col gap-12 min-h-screen pt-40 sm:pt-36 snap-none lg:px-20 w-[calc(100vw-1rem)] xs:w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
-      <h2 className="text-4xl font-bold w-fit mx-auto text-center">#LDW2023 Updates</h2>
+      <h2 className="text-4xl font-bold w-fit mx-auto text-center">@LondonDataWeek Updates</h2>
       <div className="h-fit min-w-[300px] mx-auto w-fit xs:w-full border-darkpink dark:border-pink shadow-md border-4 rounded-2xl max-w-[50rem] sm:mx-auto">
         <a
           className="twitter-timeline"
