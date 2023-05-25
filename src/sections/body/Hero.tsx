@@ -24,14 +24,14 @@ export default function Hero() {
     <section
       id="hero-section"
       ref={elementRef}
-      className=" absolute z-[997] bg-white dark:bg-darkblue top-0 grid min-h-screen w-screen "
+      className=" absolute z-[997] bg-gradient-to-b from-bg to-bg-var dark:bg-gradient-to-b dark:from-bg-dk dark:via-bg-dk dark:to-bg-var-dk top-0 grid min-h-screen w-screen "
     >
       <div className=" grid items-center grid-rows-[1fr_auto_auto_2fr_auto_1.2fr] sm:grid-rows-[1fr_auto_auto_2fr_auto] gap-4  w-body-sm min-w-body max-w-body sm:w-body mx-auto ">
-        <div className=" relative pr-[6.5%] row-start-2 bg-darkblue rounded-3xl overflow-clip mx-auto w-full max-w-[56rem] py-8">
+        <div className=" relative pr-[6.5%] row-start-2 bg-darkblue dark:bg-transparent rounded-3xl overflow-clip mx-auto w-full max-w-[56rem] py-8">
           {!hasScrolled ? <AnimatedLogo /> : <FullLogoWhiteColour />}
         </div>
 
-        <div className=" row-start-3 m-auto grid gap-4 md:gap-16 text-center w-full fade-in bg-white dark:bg-darkblue">
+        <div className=" row-start-3 m-auto grid gap-4 md:gap-16 text-center w-full fade-in">
           <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">3-9 July</p>
           <div className="text-2xl xs:text-3xl mx-auto text-center w-fit justify-center md:text-5xl flex flex-row flex-wrap gap-2">
             <p className="w-fit text-center ">

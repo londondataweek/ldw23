@@ -51,6 +51,7 @@ dialog:not([open]) {
 }
 
 dialog {
+padding:0;
   opacity: 1;
   display: grid;
   animation: modalAnimation ease-out 300ms;

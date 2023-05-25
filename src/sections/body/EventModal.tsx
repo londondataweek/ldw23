@@ -44,7 +44,7 @@ export default function EventModal({
     <dialog
       ref={refPassed}
       id="event-modal"
-      className="relative sm:w-fit w-screen max-w-[54rem] h-fit rounded-3xl sm:border-2 sm:border-darkblue bg-white text-darkblue m-auto py-12 px-6 sm:p-12"
+      className="relative w-[95vw] sm:w-[98vw] min-w-[280px] max-w-[54rem] h-fit rounded-3xl sm:border-2 sm:border-darkblue bg-white text-darkblue m-auto"
     >
       <button
         ref={initialFocus}
@@ -55,21 +55,22 @@ export default function EventModal({
         onKeyDown={(e) => {
           if (e.key !== 'Tab') handleClose();
         }}
-        className="w-8 h-8 bg-palegrey hover:transition text-darkblue focus:text-palegrey focus:transition focus:bg-darkblue hover:bg-darkblue hover:text-white rounded-full p-1 absolute top-2 right-2"
+        className="w-8 h-8 z-10 bg-darkblue hover:transition text-palegrey  focus:text-darkblue focus:transition focus:bg-white hover:bg-white hover:text-darkblue rounded-full p-1 absolute top-2 right-2"
       >
         <CloseSvg />
       </button>
-      <div>
-        <div
-          className={`my-4 rounded-xl p-2 sm:p-6 text-center ${colourIndex === 0 ? 'bg-yellow' : ''}${
-            colourIndex === 1 ? 'bg-pink' : ''
-          }${colourIndex === 2 ? 'bg-lightgreen' : ''}`}
-        >
-          <div className="flex flex-row flex-wrap gap-2 items-center justify-center">
-            <p className="w-fit text-center text-3xl font-bold">{title}</p>
-            {subtitle.length > 0 ? <p className="w-fit text-center font-bold text-2xl">{subtitle}</p> : null}
-          </div>
+
+      <div
+        className={`rounded-none sticky top-0 left-0 w-full py-10 text-center ${colourIndex === 0 ? 'bg-yellow' : ''}${
+          colourIndex === 1 ? 'bg-pink' : ''
+        }${colourIndex === 2 ? 'bg-lightgreen' : ''}`}
+      >
+        <div className="flex flex-row flex-wrap gap-2 items-center justify-center">
+          <p className="w-fit text-center text-3xl font-bold">{title}</p>
+          {subtitle.length > 0 ? <p className="w-fit text-center font-bold text-2xl">{subtitle}</p> : null}
         </div>
+      </div>
+      <div className="px-4 xs:px-10 py-4 xs:py-8">
         <p className="text-center xs:text-justify p-2 sm:p-6">{Description}</p>
         <div className="w-fit sm:w-full mx-auto py-2 sm:px-8">
           <p className=" flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
