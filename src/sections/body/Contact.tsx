@@ -32,6 +32,8 @@ export default function Contact() {
           data-height="600"
           data-theme="dark"
           href="https://twitter.com/londondataweek?ref_src=twsrc%5Etfw"
+          target="_blank"
+          rel="noreferrer"
         >
           Refresh to see tweets by @LondonDataWeek!
         </a>
