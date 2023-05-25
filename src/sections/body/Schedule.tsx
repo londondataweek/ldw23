@@ -8,7 +8,6 @@ let DayCards: JSX.Element[];
 function init() {
   eventData()
     .then((dataArray) => {
-      console.log('dataArray:', dataArray);
       DayCards = dataArray.map((event, index) => {
         const key = `${index}`;
         return <DayCard key={key} colourIndex={index} eventsArray={event} />;
@@ -16,8 +15,6 @@ function init() {
     })
     .catch(() => {
       const dataArray = getHardData();
-      console.log('dataArray:', dataArray);
-
       DayCards = dataArray.map((event, index) => {
         const key = `${index}`;
         return <DayCard key={key} colourIndex={index} eventsArray={event} />;

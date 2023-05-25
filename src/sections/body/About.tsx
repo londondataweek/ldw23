@@ -75,8 +75,7 @@ export default function About() {
 
         <div className="grid sm:grid-cols-2 w-full gap-6 sm:gap-8 ">
           <p className="w-fit my-auto sm:p-4 min-w-[15rem] md:min-w-[20rem]">
-            Explore our schedule to discover workshops, comedy events, cycling challenges and more! More events to be
-            announced in May 2023.
+            Explore our schedule to discover workshops, comedy events, cycling challenges and more!
           </p>
           <img
             className="dark:hidden block max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "

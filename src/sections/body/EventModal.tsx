@@ -100,10 +100,6 @@ export default function EventModal({
               target="_blank"
               rel="noreferrer"
               href={MoreInfo}
-              onBlur={() => {
-                console.log('blur');
-                if (initialFocus.current != null) initialFocus.current.focus();
-              }}
             >
               <p className="w-fit h-fit mx-auto font-bold my-auto self-center text-lg sm:text-xl">Find Out More</p>
             </a>
