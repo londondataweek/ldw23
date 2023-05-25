@@ -1,7 +1,7 @@
 export default function WritingSvg() {
   return (
-    <div className="pointer-events-none h-full w-full pl-1">
-      <svg viewBox="0 30 124 84">
+    <div className="pointer-events-none h-full w-auto m-auto ">
+      <svg viewBox="20 37 95 85">
         <g id="Icons">
           <g
             id="_x35__00000091711016221767001560000006846974913106463105_"
