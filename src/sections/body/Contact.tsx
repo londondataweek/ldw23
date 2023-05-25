@@ -33,7 +33,7 @@ export default function Contact() {
           data-theme="dark"
           href="https://twitter.com/londondataweek?ref_src=twsrc%5Etfw"
         >
-          Tweets by londondataweek
+          Refresh to see tweets by @LondonDataWeek!
         </a>
       </div>
 
