@@ -13,7 +13,8 @@ export default function EventCard({
 }) {
   const modalRef = useRef<HTMLDialogElement>(null);
 
-  const { Name, Location, Time } = eventObject;
+  const { title, subtitle, Location, Time } = eventObject;
+
   function handleClick() {
     modalRef.current?.showModal();
   }
@@ -27,7 +28,10 @@ export default function EventCard({
           bottom ? 'rounded-b-xl' : ''
         }  mx-2 justify-center p-2 px-8 bg-semiWhite hover:transition hover:bg-white focus:transition focus:outline-none focus:bg-white text-darkblue text-base clip-corner`}
       >
-        <h2 className="w-fit h-fit m-auto font-bold text-xl text-center">{Name.split(':')[0]}</h2>
+        <div className="flex flex-row flex-wrap gap-2 items-center justify-center">
+          <h2 className="w-fit h-fit font-bold text-xl text-center">{title}</h2>
+          {subtitle.length > 0 ? <h2 className="w-fit h-fit font-bold text-lg text-center">{subtitle}</h2> : null}
+        </div>
         <div>
           <p className="w-fit h-fit m-auto text-sm font-semibold">{Time}</p>
           <p className="w-fit h-fit m-auto">{Location.split(',')[0]}</p>

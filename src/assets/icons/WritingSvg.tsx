@@ -5,7 +5,7 @@ export default function WritingSvg() {
         <g id="Icons">
           <g
             id="_x35__00000091711016221767001560000006846974913106463105_"
-            className="fill-none stroke-current stroke-2"
+            className="fill-none stroke-current stroke-[3px]"
             style={{ strokeLinecap: 'round', strokeLinejoin: 'round', strokeMiterlimit: '10' }}
           >
             <path d="M94.4,62.9v38.3c0,2.1-1.7,3.8-3.8,3.8H37.3c-2.1,0-3.8-1.7-3.8-3.8V62.4c0-2.1,1.7-3.8,3.8-3.8h46.3" />
