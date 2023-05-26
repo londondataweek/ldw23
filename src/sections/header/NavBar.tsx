@@ -29,12 +29,12 @@ export default function NavBar({
       {showHamburger ? null : <SmallNavButton sectionString={currentSection} clickFunction={toggleMenu} />}
       <InternalLink
         mediaVisibility="hidden sm:flex"
-        link="#about-section"
+        link="#about"
         content={[
           <p
             key="text"
             className={`m-0 hidden font-bold sm:inline ${
-              currentSection === 'about-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''
+              currentSection === 'about' ? 'dark:text-lightgreen text-darkgreentxt' : ''
             }`}
           >
             ABOUT
@@ -43,12 +43,12 @@ export default function NavBar({
       />
       <InternalLink
         mediaVisibility="hidden sm:flex"
-        link="#schedule-section"
+        link="#schedule"
         content={[
           <p
             key="text"
             className={`m-0 hidden font-bold sm:inline ${
-              currentSection === 'schedule-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''
+              currentSection === 'schedule' ? 'dark:text-lightgreen text-darkgreentxt' : ''
             }`}
           >
             SCHEDULE
@@ -57,12 +57,12 @@ export default function NavBar({
       />
       <InternalLink
         mediaVisibility="hidden sm:flex"
-        link="#contact-section"
+        link="#contact"
         content={[
           <p
             key="text"
             className={`m-0 hidden font-bold sm:inline ${
-              currentSection === 'contact-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''
+              currentSection === 'contact' ? 'dark:text-lightgreen text-darkgreentxt' : ''
             }`}
           >
             CONTACT

@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <section
-      id="hero-section"
+      id="hero"
       ref={elementRef}
       className=" absolute z-[997] bg-gradient-to-b from-bg to-bg-var dark:bg-gradient-to-b dark:from-bg-dk dark:via-bg-dk dark:to-bg-var-dk top-0 grid min-h-screen w-screen "
     >
@@ -46,7 +46,7 @@ export default function Hero() {
         <div className=" row-start-5 mb-auto h-fit sm:pb-8">
           <a
             className="h-fit w-fit r mx-auto text-darkblue dark:text-white hover:transition hover:text-darkgreen dark:hover:text-pink focus-within:transition focus-within:text-darkgreen dark:focus-within:text-pink"
-            href="#about-section"
+            href="#about"
             aria-label="scroll down"
             id="scroll-down"
           >

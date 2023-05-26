@@ -11,14 +11,14 @@ export interface ProviderContext extends ProviderState {
 }
 
 const initialiserContext: ProviderContext = {
-  currentSection: 'hero-section',
+  currentSection: 'hero',
   hasScrolled: false,
   setcurrentSection: () => undefined,
   setHasScrolled: () => undefined,
 };
 
 function useData() {
-  const [currentSection, setcurrentSection] = useState('hero-section');
+  const [currentSection, setcurrentSection] = useState('hero');
   const [hasScrolled, setHasScrolled] = useState(false);
   return {
     currentSection,

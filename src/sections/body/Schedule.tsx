@@ -42,7 +42,7 @@ export default function Schedule() {
 
   return (
     <section
-      id="schedule-section"
+      id="schedule"
       ref={elementRef}
       className="min-h-screen w-screen bg-gradient-to-b from-bg to-bg-var dark:bg-gradient-to-b dark:from-bg-dk dark:to-bg-var-dk  snap-none lg:snap-start "
     >

@@ -5,7 +5,7 @@ export default function SmallNavButton({
   sectionString: string;
   clickFunction: () => void;
 }) {
-  if (sectionString === 'hero-section') return null;
+  if (sectionString === 'hero') return null;
   const content = sectionString.split('-')[0].toUpperCase();
 
   return (

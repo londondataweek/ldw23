@@ -28,11 +28,11 @@ export default function HamburgerMenu({
     >
       <InternalLink
         layoutClasses="text-center flex flex-col w-20"
-        link="#about-section"
+        link="#about"
         content={[
           <p
             key="text"
-            className={`m-0  ${currentSection === 'about-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
+            className={`m-0  ${currentSection === 'about' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
           >
             ABOUT
           </p>,
@@ -40,11 +40,11 @@ export default function HamburgerMenu({
       />
       <InternalLink
         layoutClasses="text-center flex flex-col w-20"
-        link="#schedule-section"
+        link="#schedule"
         content={[
           <p
             key="text"
-            className={`m-0  ${currentSection === 'schedule-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
+            className={`m-0  ${currentSection === 'schedule' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
           >
             SCHEDULE
           </p>,
@@ -52,11 +52,11 @@ export default function HamburgerMenu({
       />
       <InternalLink
         layoutClasses="text-center flex flex-col w-20"
-        link="#contact-section"
+        link="#contact"
         content={[
           <p
             key="text"
-            className={`m-0  ${currentSection === 'contact-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
+            className={`m-0  ${currentSection === 'contact' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
           >
             CONTACT
           </p>,
