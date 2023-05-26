@@ -25,7 +25,7 @@ export default function About() {
       ref={elementRef}
       className="bg-gradient-to-t from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk relative w-screen min-h-screen pt-40 sm:pt-36  snap-start "
     >
-      <div className="relative h-fit pt-40 sm:pt-36  bg-transparent snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto">
+      <div className="relative h-fit bg-transparent snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold w-fit mx-auto text-center mb-12">About LDW 2023</h2>
 
         <div className="grid text-base text-justify  md:text-xl lg:text-2xl w-full mx-auto gap-6 sm:gap-8">

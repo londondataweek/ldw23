@@ -105,8 +105,12 @@ export default function Footer() {
         </div>
 
         <div className=" grid gap-4 mb-6">
-          <p key="text" className="m-0 w-fit mx-auto text-txt-mid dark:text-txt-mid-dk ">
-            Design: London Data Week Team
+          <p className="m-0 w-fit mx-auto text-center text-sm text-txt-mid dark:text-txt-mid-dk ">
+            <b>Core Team:</b> Jennifer Ding, Polly Kwok, Sam Nutt, Nita Parmar, Jessie Pearce
+          </p>
+          <p className="m-0 w-fit mx-auto max-w-[40rem] text-center text-sm text-txt-mid dark:text-txt-mid-dk ">
+            <b>Advisory Board:</b> Theo Blackwell, Louise Crow, Natalia Domagala, Reema Patel, Omid Shiraji, Giuseppe
+            Sollazzo, Jack Stilgoe, Emma Thwaites, Kirstie Whitaker, Christine Wingfield
           </p>
           <ExternalLink
             layoutClasses="w-fit mx-auto hover:transition hover:scale-105 focus:transition focus:scale-105 mb-12"
@@ -114,8 +118,8 @@ export default function Footer() {
             link="https://gld-portfolio.vercel.app/"
             content={
               <div className="grid gap-4 ">
-                <p key="text" className="m-0 mx-auto ">
-                  Web Development: Gareth L Devlin
+                <p className="m-0 mx-auto text-base">
+                  <b>Web Development: </b>Gareth L Devlin
                 </p>
                 <div className="mx-auto h-14 w-14">
                   <GldSvg />
