@@ -1,5 +1,7 @@
 # London Data Week Website 2023
 
+### [Event Update Tutorial](https://github.com/GLD5000/GLD-London-Data-Week/blob/f7df59fd0078636c06270c256d9766fce62da823/GLD_LDW_Tutorial.pdf)
+
 ## Includes:
 
 - Responsive Design for different sizes of screen
