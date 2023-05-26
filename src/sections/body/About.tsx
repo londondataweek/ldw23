@@ -23,7 +23,7 @@ export default function About() {
     <section
       id="about"
       ref={elementRef}
-      className="bg-gradient-to-t from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk relative w-screen max-landscapeMobile:landscape:min-h-[100vmax] min-h-screen pt-40 sm:pt-36"
+      className="bg-gradient-to-t from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk relative w-screen max-lg:landscape:min-h-[100vmax] min-h-screen pt-40 sm:pt-36"
     >
       <div className="relative h-fit bg-transparent w-body-sm min-w-body max-w-body sm:w-body mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold w-fit mx-auto text-center mb-12">About LDW 2023</h2>
