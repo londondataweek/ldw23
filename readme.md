@@ -1,6 +1,6 @@
 # London Data Week Website 2023
 
-### [Event Update Tutorial](https://github.com/londondataweek/ldw23/blob/0796d40a363157a96dbedfbc970c2bbf42af9e00/GLD_LDW_Tutorial.pdf)
+### [Event Update Tutorial](GLD_LDW_Tutorial.pdf)
 
 ## Includes:
 
