@@ -60,7 +60,7 @@ export default function EventModal({
           onKeyDown={(e) => {
             if (e.key !== 'Tab') handleClose();
           }}
-          className="w-8 h-8 z-10 bg-darkblue hover:transition text-palegrey  focus:text-darkblue focus:transition focus:bg-white hover:bg-white hover:text-darkblue rounded-full p-1 absolute top-2 right-2"
+          className="w-7 h-7 z-10 bg-darkblue hover:transition text-palegrey  focus:text-darkblue focus:transition focus:bg-white hover:bg-white hover:text-darkblue rounded-full p-1 absolute top-2 right-2"
         >
           <CloseSvg />
         </button>
