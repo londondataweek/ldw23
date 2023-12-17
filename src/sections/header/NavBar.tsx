@@ -41,7 +41,7 @@ export default function NavBar({
           </p>,
         ]}
       />
-      <InternalLink
+      {/* <InternalLink
         mediaVisibility="hidden sm:flex"
         link="#schedule"
         content={[
@@ -54,7 +54,7 @@ export default function NavBar({
             SCHEDULE
           </p>,
         ]}
-      />
+      /> */}
       <InternalLink
         mediaVisibility="hidden sm:flex"
         link="#contact"

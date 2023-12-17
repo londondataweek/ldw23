@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 import DownArrowSvg from '../../assets/icons/DownArrowSvg';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
-import AnimatedLogo from '../../assets/logos/AnimatedLogo';
-import FullLogoWhiteColour from '../../assets/logos/FullLogoWhiteColour';
+// import AnimatedLogo from '../../assets/logos/AnimatedLogo';
+import AnimatedLogo from '../../assets/logos/FullLogoWhiteColour2024';
+import FullLogoWhiteColour from '../../assets/logos/FullLogoWhiteColour2024';
 
 export default function Hero() {
   const { elementRef, onScreen } = useIntersectionObserver();
@@ -32,7 +33,7 @@ export default function Hero() {
         </div>
 
         <div className=" row-start-3 m-auto grid gap-4 md:gap-16 text-center w-full fade-in">
-          <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">3-9 July</p>
+          <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">1-7 July 2024</p>
           <div className="text-2xl xs:text-3xl mx-auto text-center w-fit justify-center md:text-5xl flex flex-row flex-wrap gap-2">
             <p className="w-fit text-center ">
               <span className="dark:text-lightgreen text-center text-darkgreentxt font-bold ">Data</span> in the
