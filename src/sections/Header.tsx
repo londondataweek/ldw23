@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import HamburgerMenu from './header/HamburgerMenu';
 import NavBar from './header/NavBar';
-import FullLogoMonochrome from '../assets/logos/FullLogoMonochrome';
+import FullLogoMonochrome from '../assets/logos/FullLogoWhiteColour2024';
 import { useIntersectionProviderContext } from '../utilities/contexts/IntersectionProvider';
 
 export default function Header({

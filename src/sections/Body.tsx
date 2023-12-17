@@ -1,6 +1,6 @@
 import About from './body/About';
 import Contact from './body/Contact';
-import Schedule from './body/Schedule';
+// import Schedule from './body/Schedule';
 
 export default function Body() {
   return (
@@ -10,7 +10,7 @@ export default function Body() {
         {/* <div className='w-screen h-40 mb-20'></div> */}
 
         <About />
-        <Schedule />
+        {/* <Schedule />*/}
         <Contact />
       </div>
     </main>
