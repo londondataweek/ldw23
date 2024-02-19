@@ -41,7 +41,7 @@ export default function Footer() {
             <AtiSvg />
           </a>
 
-          <div className="hidden lg:block h-full w-fit py-2">
+          {/* <div className="hidden lg:block h-full w-fit py-2">
             <HorizontalDivider />
             </div>
             <a
@@ -52,7 +52,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <MolSvg />
-            </a>
+            </a>*/}
 
         </div>
         {/* <div className='md:my-6 max-w-[30rem] min-w-[15rem] mx-auto h-auto w-full'>

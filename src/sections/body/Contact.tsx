@@ -25,11 +25,15 @@ export default function Contact() {
       ref={elementRef}
       className="w-screen bg-gradient-to-t from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk"
     >
-      <div className="flex flex-col gap-12 min-h-screen pt-40 sm:pt-36 lg:px-20 w-[calc(100vw-1rem)] xs:w-body-sm min-w-body max-w-body sm:w-body mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold w-fit mx-auto">Get Involved</h2>
+      <div className="flex flex-col gap-12 min-h-screen text-center  pt-40 sm:pt-36 lg:px-20 w-[calc(100vw-1rem)] xs:w-body-sm min-w-body max-w-body sm:w-body mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold w-fit mx-auto text-center ">Get Involved</h2>
 
-        <p>London Data Week is designed to be open and inclusive, with many different organisations running their own events and activities. 
-          In early 2024, we will publish details on this site on how you can propose an event for the week, together with the support we can offer.</p>
+        <p className=" text-2xl xs:text-2xl md:text-2xl mx-auto w-fit ">
+        To learn more about how to get involved with London Data Week, <a href="https://forms.gle/gLH71FExmKwcJtp68"><u>register for an upcoming webinar</u>. </a>
+        If you are interested in applying to host an event or volunteer,
+        fill out our <a href="https://airtable.com/appzyMC4CJl7GwcK5/shrRXtM6RidqKM6qu"> <u>call for participation form</u>!</a>
+        </p>
+
 
         <div className="h-fit min-w-[280px] mx-auto w-fit xs:w-full  bg-darkgreen dark:bg-lightgreen border-2 border-darkblue rounded-t-xl rounded-b-2xl max-w-body sm:mx-auto">
           <h2 className=" text-2xl xs:text-3xl sm:text-4xl font-bold w-full bg-semiWhite rounded-t-xl  text-darkblue py-6  mx-auto text-center">

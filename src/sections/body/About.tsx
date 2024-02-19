@@ -27,7 +27,6 @@ export default function About() {
     >
       <div className="relative h-fit bg-transparent w-body-sm min-w-body max-w-body sm:w-body mx-auto">
         <h2 className="text-3xl sm:text-4xl font-bold w-fit mx-auto text-center mb-12">About London Data Week</h2>
-
         <div className="grid text-base text-justify  md:text-xl lg:text-2xl w-full mx-auto gap-6 sm:gap-8">
           <div className="grid sm:grid-cols-2 w-full gap-6 sm:gap-8 ">
             <p className="w-fit my-auto sm:p-4 min-w-[15rem] md:min-w-[20rem]">
@@ -77,7 +76,8 @@ export default function About() {
 
           <div className="grid sm:grid-cols-2 w-full gap-6 sm:gap-8 ">
             <p className="w-fit my-auto sm:p-4 min-w-[15rem] md:min-w-[20rem]">
-              Explore our schedule to discover workshops, comedy events, cycling challenges and more!
+              After an <a href="https://drive.google.com/file/d/17ZvWBt2c_JFHOzumnPI27jz586iesxEq/view?usp=sharing"> <u>incredible first year in 2023</u></a>,
+              London Data Week is <a href="https://loti.london/blog/london-data-week-is-back-in-2024/"><u>back for 2024</u></a>! 
             </p>
             <img
               className="dark:hidden block max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "
