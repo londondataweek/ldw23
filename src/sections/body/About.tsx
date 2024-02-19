@@ -76,8 +76,8 @@ export default function About() {
 
           <div className="grid sm:grid-cols-2 w-full gap-6 sm:gap-8 ">
             <p className="w-fit my-auto sm:p-4 min-w-[15rem] md:min-w-[20rem]">
-              After an <a href="https://drive.google.com/file/d/17ZvWBt2c_JFHOzumnPI27jz586iesxEq/view?usp=sharing"> <u>incredible first year in 2023</u></a>,
-              London Data Week is <a href="https://loti.london/blog/london-data-week-is-back-in-2024/"><u>back for 2024</u></a>! 
+              After an <a href="https://drive.google.com/file/d/1xa8UTExWKyrjJb-IPwVqbBAVa-tE1VBW/view?usp=sharing"> <u>incredible first year in 2023</u></a>,
+              London Data Week is <a href="https://loti.london/blog/london-data-week-is-back-in-2024/"><u>back for 2024</u></a>!
             </p>
             <img
               className="dark:hidden block max-w-[20rem] h-48 w-fit md:h-60 mx-auto  "

@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import DownArrowSvg from '../../assets/icons/DownArrowSvg';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
-// import AnimatedLogo from '../../assets/logos/FullLogoWhiteColour2024';
-import AnimatedLogo from '../../assets/logos/AnimatedLogo_2024';
+import AnimatedLogo from '../../assets/logos/FullLogoWhiteColour2024';
+// import AnimatedLogo from '../../assets/logos/AnimatedLogo_2024';
 import FullLogoWhiteColour from '../../assets/logos/FullLogoWhiteColour2024';
 
 export default function Hero() {
