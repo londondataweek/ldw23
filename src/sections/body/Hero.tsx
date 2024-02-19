@@ -45,7 +45,7 @@ export default function Hero() {
           </div>
 
           <form>
-            <button formaction="https://airtable.com/appzyMC4CJl7GwcK5/shrRXtM6RidqKM6qu"
+            <button formAction="https://airtable.com/appzyMC4CJl7GwcK5/shrRXtM6RidqKM6qu"
               className="my-6 rounded-full w-60 flex flex-row items-center justify-center gap-2 h-12 text-lg sm:text-xl mx-auto px-4 py-2 font-bold text-darkblue dark:text-darkblue bg-darkpink dark:bg-pink hover:transition focus:transition hover:text-white hover:bg-darkblue  focus:text-white focus:bg-darkblue  dark:hover:bg-white  dark:focus:bg-white"
             >
               Get involved
