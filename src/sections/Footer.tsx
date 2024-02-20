@@ -16,7 +16,9 @@ export default function Footer() {
           London Data Week is made possible by:
         </h2>
         <div className="  flex flex-col lg:flex-row lg:h-28 mx-auto justify-around w-fit gap-6">
+
           <div className=" flex w-64">
+
             <a
               className="h-fit max-h-[5rem] mx-auto lg:mr-0 lg:ml-auto my-auto  w-[150px]"
               aria-label="Go to the LOTI website"
@@ -26,11 +28,13 @@ export default function Footer() {
             >
               <LotiSvg />
             </a>
+
           </div>
 
           <div className="hidden lg:block h-full w-fit py-2">
             <HorizontalDivider />
           </div>
+
           <a
             className=" h-fit w-64"
             aria-label="Go to the Alan Turing Institute website"
@@ -55,6 +59,7 @@ export default function Footer() {
             </a>*/}
 
         </div>
+
         {/* <div className='md:my-6 max-w-[30rem] min-w-[15rem] mx-auto h-auto w-full'>
 
         <MolSvg/>

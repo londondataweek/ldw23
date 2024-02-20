@@ -34,6 +34,11 @@ export default function Contact() {
         fill out our <a href="https://airtable.com/appzyMC4CJl7GwcK5/shrRXtM6RidqKM6qu"> <u>call for participation form</u>!</a>
         </p>
 
+        <p className=" text-1xl xs:text-1xl md:text-2xl mx-auto w-fit ">
+        For more information about what to expect from the application process and London Data Week, please refer to our
+        <a href="https://drive.google.com/file/d/1ipR14se-UuO6yqY_-cFXeYgt7Csbks07/view?usp=sharing"><u> open event call document</u></a> and
+        <a href="https://drive.google.com/file/d/1UoFZ_cmUTYtLQ2WUhqF6y0LNaujMu2PC/view?usp=sharing"> <u>FAQ document</u>. </a>
+        </p>
 
         <div className="h-fit min-w-[280px] mx-auto w-fit xs:w-full  bg-darkgreen dark:bg-lightgreen border-2 border-darkblue rounded-t-xl rounded-b-2xl max-w-body sm:mx-auto">
           <h2 className=" text-2xl xs:text-3xl sm:text-4xl font-bold w-full bg-semiWhite rounded-t-xl  text-darkblue py-6  mx-auto text-center">
