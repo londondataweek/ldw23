@@ -29,7 +29,7 @@ export default function Contact() {
         <h2 className="text-3xl sm:text-4xl font-bold w-fit mx-auto text-center ">Get Involved</h2>
 
         <p className=" text-1xl xs:text-1xl md:text-2xl mx-auto w-fit ">
-        To learn more about how to get involved with London Data Week, <a href="https://forms.gle/gLH71FExmKwcJtp68"><u>register for an upcoming webinar</u>. </a>
+        To learn more about how to get involved with London Data Week, <a href="https://www.tickettailor.com/events/loti"><u>register for an upcoming webinar</u>. </a>
         If you are interested in applying to host an event or volunteer,
         fill out our <a href="https://airtable.com/appzyMC4CJl7GwcK5/shrRXtM6RidqKM6qu"> <u>call for participation form</u>!</a>
         </p>
